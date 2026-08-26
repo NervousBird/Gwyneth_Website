@@ -48,7 +48,7 @@ export default function Home() {
       </section>
       <h1>Gwyneth Walton</h1>
       <Gallery gallery={gallery} onHandleFocus={handleFocus} />
-      <footer>footer</footer>
+      <footer></footer>
     </main>
   );
 }
