@@ -46,7 +46,7 @@ export default function Home() {
       <section className="sticky">
         <Carousel img={viewedImage} onHandleButton={handleButton} />
       </section>
-      <h1>Gwyneth Walton Art</h1>
+      <h1>Gwyneth Walton</h1>
       <Gallery gallery={gallery} onHandleFocus={handleFocus} />
       <footer>footer</footer>
     </main>

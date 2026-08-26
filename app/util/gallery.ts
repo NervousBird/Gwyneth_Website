@@ -1,45 +1,5 @@
 export const gallery = [
   {
-    img: "B671F456-7C6C-4419-8391-F815149F5558.jpg",
-    aspect: "tall",
-  },
-  {
-    img: "FB_IMG_1589096283182.jpg",
-    aspect: "tall",
-  },
-  {
-    img: "FB_IMG_1589096311558.jpg",
-    aspect: "tall",
-  },
-  {
-    img: "FB_IMG_1649025908940.jpg",
-    aspect: "tall",
-  },
-  {
-    img: "FB_IMG_1649025981784.jpg",
-    aspect: "wide",
-  },
-  {
-    img: "FB_IMG_1649816108923.jpg",
-    aspect: "wide",
-  },
-  {
-    img: "FB_IMG_1649816157555.jpg",
-    aspect: "tall",
-  },
-  {
-    img: "FB_IMG_1649816325743.jpg",
-    aspect: "tall",
-  },
-  {
-    img: "FB_IMG_1665094339249.jpg",
-    aspect: "tall",
-  },
-  {
-    img: "FB_IMG_1665094400408.jpg",
-    aspect: "tall",
-  },
-  {
     img: "IMG_1312.jpg",
     aspect: "tall",
   },
@@ -82,5 +42,45 @@ export const gallery = [
   {
     img: "Untitled-Artwork.jpg",
     aspect: "wide",
+  },
+  {
+    img: "B671F456-7C6C-4419-8391-F815149F5558.jpg",
+    aspect: "tall",
+  },
+  {
+    img: "FB_IMG_1589096283182.jpg",
+    aspect: "tall",
+  },
+  {
+    img: "FB_IMG_1589096311558.jpg",
+    aspect: "tall",
+  },
+  {
+    img: "FB_IMG_1649025908940.jpg",
+    aspect: "tall",
+  },
+  {
+    img: "FB_IMG_1649025981784.jpg",
+    aspect: "wide",
+  },
+  {
+    img: "FB_IMG_1649816108923.jpg",
+    aspect: "wide",
+  },
+  {
+    img: "FB_IMG_1649816157555.jpg",
+    aspect: "tall",
+  },
+  {
+    img: "FB_IMG_1649816325743.jpg",
+    aspect: "tall",
+  },
+  {
+    img: "FB_IMG_1665094339249.jpg",
+    aspect: "tall",
+  },
+  {
+    img: "FB_IMG_1665094400408.jpg",
+    aspect: "tall",
   },
 ] as { img: string; aspect: string }[];

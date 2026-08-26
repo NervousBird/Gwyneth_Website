@@ -4,15 +4,31 @@
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
+* {
+  --background: rgb(240, 235, 225);
+}
+
+@font-face {
+  font-family: VarentGrotesk;
+  src: url("fonts/VarentGrotesk-Bold.otf");
+}
+
 html,
 body {
+  font-family: VarentGrotesk;
+  font-weight: 100;
   margin: 0;
   padding: 0;
+
+  background: rgb(245, 240, 230);
 }
 
 h1 {
   text-align: center;
-  font-size: 5vw;
+  font-size: 10.5vw;
+  margin: 0;
+  padding-top: 2vw;
+  color: rgb(35, 20, 20);
 }
 
 .gallery-container {
@@ -24,13 +40,18 @@ h1 {
 
 .image-container {
   aspect-ratio: 1;
-  max-width: 18vw;
-  height: 18vw;
+  max-width: 32vw;
+  height: 32vw;
+  /* max-width: 23vw; */
+  /* height: 23vw; */
   overflow: hidden;
   justify-content: center;
+  transition: box-shadow 0.4s ease;
 }
 .image-container:hover {
-  outline: 2px solid black;
+  /* outline: 2px solid white; */
+  box-shadow: 0px 0px 8px 3px rgb(230, 225, 215);
+  transition: box-shadow 0.4s ease;
 }
 
 .image-container img {
@@ -63,6 +84,8 @@ h1 {
   height: 100vh;
   justify-content: center;
   background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+  animation: fade-in 0.5s;
 }
 
 .hidden {
@@ -73,18 +96,22 @@ h1 {
   display: flex;
   justify-content: center;
   align-self: center;
-  height: 90%;
+  height: 95%;
   width: 100%;
   pointer-events: none;
+  animation: fade-in 0.5s;
 }
 
 .carousel img {
-  height: 90vh;
+  height: 95vh;
   width: auto;
   pointer-events: all;
+  box-shadow: 0px 0px 40px 5px white;
+  animation: fade-in 0.5s;
 }
 
 .carousel button {
+  font-family: VarentGrotesk;
   align-self: center;
   background: none;
   border: none;
@@ -92,9 +119,19 @@ h1 {
   height: 100%;
   width: 100%;
   max-width: 5vw;
-  font-size: 20px;
+  font-size: 30px;
 
   pointer-events: all;
+  animation: fade-in 0.5s;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
 }
 
 footer {

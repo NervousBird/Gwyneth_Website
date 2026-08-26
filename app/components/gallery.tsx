@@ -6,7 +6,6 @@ interface Props {
 function Gallery({ gallery, onHandleFocus }: Props) {
   return (
     <section>
-      <h2>Gallery</h2>
       <section className="gallery-container">
         {gallery.map((img, idx) => (
           <div className={"image-container"} key={idx}>
