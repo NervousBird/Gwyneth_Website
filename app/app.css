@@ -1,15 +1,101 @@
-@import "tailwindcss";
-
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-sans:
+    "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  margin: 0;
+  padding: 0;
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+h1 {
+  text-align: center;
+  font-size: 5vw;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px;
+}
+
+.image-container {
+  aspect-ratio: 1;
+  max-width: 18vw;
+  height: 18vw;
+  overflow: hidden;
+  justify-content: center;
+}
+.image-container:hover {
+  outline: 2px solid black;
+}
+
+.image-container img {
+  display: block;
+  object-fit: contain;
+  margin: auto;
+}
+
+.wide {
+  max-width: auto;
+  max-height: 100%;
+}
+
+.tall {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+}
+
+.carousel-container {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.hidden {
+  display: none !important;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  height: 90%;
+  width: 100%;
+  pointer-events: none;
+}
+
+.carousel img {
+  height: 90vh;
+  width: auto;
+  pointer-events: all;
+}
+
+.carousel button {
+  align-self: center;
+  background: none;
+  border: none;
+
+  height: 100%;
+  width: 100%;
+  max-width: 5vw;
+  font-size: 20px;
+
+  pointer-events: all;
+}
+
+footer {
 }
