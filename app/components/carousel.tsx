@@ -16,11 +16,11 @@ function Carousel({ img, onHandleButton }: Props) {
       <section className="carousel">
         {/* <button onClick={handleClose}>close</button> */}
         <button name="prev" onClick={onHandleButton}>
-          {"<"}
+          {"prev"}
         </button>
         <img src={img || ""} />
         <button name="next" onClick={onHandleButton}>
-          {">"}
+          {"next"}
         </button>
       </section>
     </section>
