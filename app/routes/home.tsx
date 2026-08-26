@@ -48,7 +48,11 @@ export default function Home() {
       </section>
       <h1>Gwyneth Walton</h1>
       <Gallery gallery={gallery} onHandleFocus={handleFocus} />
-      <footer></footer>
+      <footer>
+        <address>
+          <a href="gwynwalton@protonmail.com">gwynwalton@protonmail.com</a>
+        </address>
+      </footer>
     </main>
   );
 }
